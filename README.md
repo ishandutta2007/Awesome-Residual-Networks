@@ -117,3 +117,16 @@ To proceed with your technical setup, workspace environment, or documentation re
 * I can generate a **Markdown matrix table** explicitly comparing Standard ResNet Blocks, Bottleneck Blocks, ResNeXt Grouped Blocks, and ConvNeXt Inverted Bottleneck Blocks across computational complexities, parameter footprint metrics, and target hardware configurations.
 * I can write a detailed technical explanation focusing on the **mathematics of Pre-Activation ResNets**, outlining the exact gradient tracking equations that guarantee monotonic loss convergence over thousands of layers.
 
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Residual-Networks&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Residual-Networks&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Residual-Networks&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Residual-Networks&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
