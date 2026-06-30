@@ -36,7 +36,30 @@ The ResNet family tree is categorized based on how the internal hidden layers of
 
 
 ```mermaid
-Standard Block (ResNet-18/34)               Bottleneck Block (ResNet-50/101/152)Input (x)                                      Input (x)│                                              │┌────┴────┐                                    ┌────┴────┐│  3x3    │                                    │  1x1    │ (Dimension Reduction)│  Conv   │                                    │  Conv   │└────┬────┘                                    └────┬────┘│  3x3    │                                    │  3x3    │ (Spatial Extraction)│  Conv   │                                    │  Conv   │└────┬────┘                                    └────┬────┘│                                         │  1x1    │ (Dimension Expansion)│                                         │  Conv   │▼                                         └────┬────┘Identity (x) ──> [ + ]                             ▼│                            Identity (x) ──> [ + ]▼                                              │Output (y)                                        ▼Output (y)
+flowchart LR
+
+subgraph S["Standard Block (ResNet-18/34)"]
+    A1["Input (x)"]
+    A2["3×3 Conv"]
+    A3["3×3 Conv"]
+    A4((+))
+    A5["Output (y)"]
+
+    A1 --> A2 --> A3 --> A4 --> A5
+    A1 -->|Identity| A4
+end
+
+subgraph B["Bottleneck Block (ResNet-50/101/152)"]
+    B1["Input (x)"]
+    B2["1×1 Conv<br/>(Dimension Reduction)"]
+    B3["3×3 Conv<br/>(Spatial Extraction)"]
+    B4["1×1 Conv<br/>(Dimension Expansion)"]
+    B5((+))
+    B6["Output (y)"]
+
+    B1 --> B2 --> B3 --> B4 --> B5 --> B6
+    B1 -->|Identity| B5
+end
 ```
 
 *   **Basic Block (ResNet-18 / ResNet-34)**
