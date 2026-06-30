@@ -1,11 +1,16 @@
-# Awesome-Residual-Networks
-## Residual Networks (ResNets): Evolution, Variants, Types, & Applications
+# 🚀 Awesome Residual Networks
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome ResNets Banner" width="100%">
+</p>
+
+## 🧠 Residual Networks (ResNets): Evolution, Variants, Types, & Applications
 
 A Residual Network (ResNet) is a hardware-aware deep convolutional neural network architecture that revolutionized the training of deep neural networks. Introduced by Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun in 2015 ("Deep Residual Learning for Image Recognition"), ResNets solved the foundational **vanishing/exploding gradient problem** in ultra-deep networks. Prior to ResNets, stacking layers past a depth of 20 resulted in a severe degradation of training accuracy because error gradients decayed exponentially as they backpropagated through the network graph. ResNets introduced **Residual Skip Connections** (shortcut connections) that skip over blocks of layers, allowing gradients to flow directly through a linear identity highway ($y = F(x) + x$) without attenuation, which unlocked stable training for networks exceeding 100 to 1,000+ layers.
 
 ---
 
-## 1. The Chronological Evolution
+## 📅 1. The Chronological Evolution
 
 The architectural implementation of residual mapping has transitioned from static baseline shortcuts to wider channel dimensions, bottleneck structures, and modern transformer-inspired deep vision layers.
 
@@ -26,7 +31,7 @@ flowchart LR
 
 ---
 
-## 2. Core Block & Architectural Variants
+## 🧱 2. Core Block & Architectural Variants
 
 The ResNet family tree is categorized based on how the internal hidden layers of the residual cell are routed and scaled mathematically.
 
@@ -67,7 +72,7 @@ end
 
 ---
 
-## 3. High-Capacity Architectural Extensions
+## 🚀 3. High-Capacity Architectural Extensions
 
 Beyond 2D vision classification networks, the mathematical properties of residual connections serve as a foundational anchor across alternative deep learning layouts.
 
@@ -79,7 +84,7 @@ Beyond 2D vision classification networks, the mathematical properties of residua
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## 🛠️ 4. Production Engineering Challenges & Hardware Solutions
 
 Deploying large-scale residual configurations within real-world engineering constraints requires balancing memory caching with silicon hardware parallelism.
 
@@ -90,7 +95,7 @@ Deploying large-scale residual configurations within real-world engineering cons
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 🌍 5. Frontier Real-World AI Applications
 
 | Application | Description | Year | First-Use Paper |
 | :--- | :--- | :--- | :--- |
