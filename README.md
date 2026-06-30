@@ -10,7 +10,11 @@ A Residual Network (ResNet) is a hardware-aware deep convolutional neural networ
 The architectural implementation of residual mapping has transitioned from static baseline shortcuts to wider channel dimensions, bottleneck structures, and modern transformer-inspired deep vision layers.
 
 ```mermaid
-[Plain VGG Networks (2014)] ----> [Vanilla ResNet (He et al., 2015)] ----> [ResNeXt / Wide ResNet (~2016-2017)] ----> [ConvNeXt (Modern Era)](Catastrophic Gradient Decay)       (Linear Identity Skip Shortcuts)           (Cardinality & Multi-Branch Scaling)       (Transformer-Style Fused CNNs)
+flowchart LR
+    A["Plain VGG Networks (2014)<br/>(Catastrophic Gradient Decay)"]
+    --> B["Vanilla ResNet (He et al., 2015)<br/>(Linear Identity Skip Shortcuts)"]
+    --> C["ResNeXt / Wide ResNet (~2016–2017)<br/>(Cardinality & Multi-Branch Scaling)"]
+    --> D["ConvNeXt (Modern Era)<br/>(Transformer-Style Fused CNNs)"]
 ```
 
 *   **The Deep Degradation Era (Plain VGG Style, Pre-2015)**
